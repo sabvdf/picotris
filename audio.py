@@ -1,5 +1,13 @@
 ## Disclaimer: this file, unlike the other code in this demo, was AI generated.
 
+## Hardware Setup
+# Connect these 5 GPIO pins through resistors to a single shared node, then through a 10µF capacitor (positive leg toward the resistors) to an amplifier or audio jack:
+# • GP10: Channel 1 — Pulse 1 (Lead Melody) via 2.2kΩ
+# • GP12: Channel 2 — Pulse 2 (Harmony) via 2.2kΩ
+# • GP14: Channel 3 — Triangle-style Square (Bass) via 3.3kΩ
+# • GP16: Channel 4 — Arpeggio / Chords via 3.3kΩ
+# • GP18: Channel 5 — PIO Noise (Kick/Snare/Hi-Hat) via 4.7kΩ
+
 import rp2
 from machine import Pin, PWM
 import uasyncio as asyncio
